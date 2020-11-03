@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 /**
  * 给你一个包含 n 个整数的数组 nums，判断 nums 中是否存在三个元素 a，b，c ， 使得 a + b + c = 0
@@ -12,7 +13,7 @@ public class LeetCode15 {
         // 对数组排序
         Arrays.sort(nums);
         // 遍历数组
-        for (k = 0; k < nums.length - 2; k++) {
+        for (int k = 0; k < nums.length - 2; k++) {
             // 如果当前节点已经大于0 则之后的数字相加绝对大于0 所以直接中止
             if (nums[k] > 0) {
                 break;

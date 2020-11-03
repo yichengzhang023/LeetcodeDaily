@@ -1,8 +1,6 @@
 import java.util.LinkedList;
 import java.util.List;
 
-import LeetCode297.TreeNode;
-
 
 public class LeetCode257 {
     protected class TreeNode{
@@ -11,7 +9,7 @@ public class LeetCode257 {
         private Integer val;
     }
     public List<String> binaryTreePaths(TreeNode root) {
-        List<String> res = new LinkedList();
+        List<String> res = new LinkedList<>();
         dfs(root, "", res);
         return res;
     }
